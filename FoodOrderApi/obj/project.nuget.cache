@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R42zpPW8FXI=",
+  "dgSpecHash": "iv1Hv6dLjG0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wipro\\source\\repos\\Food order\\FoodOrderApi\\FoodOrderApi.csproj",
+  "projectFilePath": "C:\\Users\\Wipro\\source\\repos\\food-order\\FoodOrderApi\\FoodOrderApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wipro\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Wipro\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",

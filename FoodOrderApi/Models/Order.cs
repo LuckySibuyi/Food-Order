@@ -7,10 +7,12 @@
         public string? CustomerAddress { get; set; }
         public string? CustomerPhone { get; set; }
         public string? CustomerEmail { get; set; }
-        public string? OrderStatus { get; set; }
-        public DateTime? OrderDate { get; set; }
-        public DateTime? DeliveryDate { get; set; }
-        public DateTime DeliveryTime { get; set; }
+
+        // Make these properties read-only outside and settable only via methods
+        public string? OrderStatus { get; private set; }
+        public DateTime? OrderDate { get; private set; }
+        public DateTime? DeliveryDate { get; private set; }
+        public DateTime DeliveryTime { get; private set; }
         public int Quantity { get; set; }
 
         public Order() { }
@@ -27,6 +29,27 @@
             DeliveryDate = deliveryDate;
             DeliveryTime = deliveryTime;
             Quantity = quantity;
+        }
+
+        // Setter methods for properties that are private set
+        public void SetOrderStatus(string status)
+        {
+            OrderStatus = status;
+        }
+
+        public void SetOrderDate(DateTime date)
+        {
+            OrderDate = date;
+        }
+
+        public void SetDeliveryDate(DateTime date)
+        {
+            DeliveryDate = date;
+        }
+
+        public void SetDeliveryTime(DateTime time)
+        {
+            DeliveryTime = time;
         }
     }
 }

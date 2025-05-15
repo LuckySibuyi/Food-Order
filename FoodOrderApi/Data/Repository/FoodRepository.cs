@@ -11,11 +11,12 @@ namespace FoodOrderApi.Data.Repository
 
         public void InsertOrder(Order order)
         {
+            order.SetOrderStatus("Placed"); // Use the setter method instead of direct assignment
+            order.SetOrderDate(DateTime.Now); // Use the setter method instead of direct assignment
             order.OrderId = _nextId++;
-            order.OrderStatus ??= "Placed";
-            order.OrderDate ??= DateTime.Now;
             _orders.Add(order);
         }
+
 
         public List<Order> FetchAllOrdersForCustomer()
         {
@@ -50,10 +51,13 @@ namespace FoodOrderApi.Data.Repository
             order.CustomerAddress = updatedOrder.CustomerAddress;
             order.CustomerPhone = updatedOrder.CustomerPhone;
             order.CustomerEmail = updatedOrder.CustomerEmail;
-            order.OrderStatus = updatedOrder.OrderStatus;
-            order.OrderDate = updatedOrder.OrderDate;
-            order.DeliveryDate = updatedOrder.DeliveryDate;
-            order.DeliveryTime = updatedOrder.DeliveryTime;
+            order.SetOrderStatus(updatedOrder.OrderStatus ?? throw new ArgumentNullException(nameof(updatedOrder.OrderStatus)));
+            order.SetOrderDate(updatedOrder.OrderDate ?? throw new ArgumentNullException(nameof(updatedOrder.OrderDate))); // Use the setter method
+            if (updatedOrder.DeliveryDate.HasValue)
+            {
+                order.SetDeliveryDate(updatedOrder.DeliveryDate.Value); // Use the setter method
+            }
+            order.SetDeliveryTime(updatedOrder.DeliveryTime); // Use the setter method
             order.Quantity = updatedOrder.Quantity;
         }
 
@@ -64,6 +68,15 @@ namespace FoodOrderApi.Data.Repository
                 throw new Exception("Order not found");
 
             _orders.Remove(order);
+        }
+        // Setter methods for properties that are private set
+        public void SetOrderStatus(string status)
+        {
+            if (string.IsNullOrWhiteSpace(status))
+            {
+                throw new ArgumentException("Order status cannot be null or empty.", nameof(status));
+            }
+            OrderStatus = status;
         }
     }
 }

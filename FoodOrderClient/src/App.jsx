@@ -1,6 +1,6 @@
 import React from 'react';
 import OrderList from './components/OrderList';
-import './App.css'; // Assuming the styles are in this file
+import './App.css';
 
 const App = () => {
     return (

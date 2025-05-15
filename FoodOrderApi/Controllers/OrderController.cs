@@ -14,47 +14,90 @@ namespace FoodOrderAPI.Controllers
         {
             _orderService = orderService;
         }
+        public DateTime? DeliveryDate { get; private set; }
+        public DateTime? DeliveryTime { get; private set; }
 
         [HttpGet]
         public ActionResult<List<Order>> GetAllOrders()
         {
-            return Ok(_orderService.RetriveAllOrdersForCustomer());
+            var orders = _orderService.RetriveAllOrdersForCustomer();
+            return Ok(orders);
         }
 
         [HttpGet("{orderId}")]
         public ActionResult<Order> GetOrderById(int orderId)
         {
             var order = _orderService.RetriveSpecificOrderDetails(orderId);
-            return order == null ? NotFound("Order not found") : Ok(order);
+            if (order == null)
+                return NotFound(new { message = "Order not found" });
+
+            return Ok(order);
         }
 
         [HttpPost]
-        public ActionResult<string> CreateOrder([FromBody] Order order)
+        public ActionResult CreateOrder([FromBody] Order order)
         {
-            _orderService.PlaceOrder(order);
-            return StatusCode(201, "Order Placed");
+            try
+            {
+                _orderService.PlaceOrder(order);
+                return StatusCode(201, new { message = "Order Placed" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpPut("{orderId}")]
-        public ActionResult<string> ModifyOrder(int orderId, [FromBody] Order order)
+        public ActionResult ModifyOrder(int orderId, [FromBody] Order order)
         {
-            order.OrderId = orderId;
-            _orderService.ModifyOrder(order);
-            return Ok("Order Modified");
+            try
+            {
+                order.OrderId = orderId;
+                _orderService.ModifyOrder(order);
+                return Ok(new { message = "Order Modified" });
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message == "Order not found")
+                    return NotFound(new { message = ex.Message });
+
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpPatch("{orderId}/quantity/{quantity}")]
-        public ActionResult<string> ModifyFoodQuantity(int orderId, int quantity)
+        public ActionResult ModifyFoodQuantity(int orderId, int quantity)
         {
-            _orderService.ModifyFoodQuantityInOrder(orderId, quantity);
-            return Ok("Quantity updated");
+            try
+            {
+                _orderService.ModifyFoodQuantityInOrder(orderId, quantity);
+                return Ok(new { message = "Quantity updated" });
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message == "Order not found")
+                    return NotFound(new { message = ex.Message });
+
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpDelete]
-        public ActionResult<string> CancelOrder([FromQuery] int orderid)
+        public ActionResult CancelOrder([FromQuery] int orderid)
         {
-            _orderService.CancelOrder(orderid);
-            return Ok("Order Cancelled");
+            try
+            {
+                _orderService.CancelOrder(orderid);
+                return Ok(new { message = "Order Cancelled" });
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message == "Order not found")
+                    return NotFound(new { message = ex.Message });
+
+                return BadRequest(new { message = ex.Message });
+            }
         }
     }
 }

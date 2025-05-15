@@ -20,8 +20,8 @@ namespace FoodOrderApi.Services
         public void PlaceOrder(Order order)
         {
             order.OrderId = _nextId++;
-            order.OrderStatus ??= "Placed";
-            order.OrderDate ??= DateTime.Now; // Changed to assign a DateTime value
+            order.SetOrderDate(DateTime.Now);
+            order.SetOrderStatus("Pending");
             _orders.Add(order);
         }
 
@@ -35,10 +35,12 @@ namespace FoodOrderApi.Services
             existingOrder.CustomerAddress = updatedOrder.CustomerAddress;
             existingOrder.CustomerPhone = updatedOrder.CustomerPhone;
             existingOrder.CustomerEmail = updatedOrder.CustomerEmail;
-            existingOrder.OrderStatus = updatedOrder.OrderStatus;
-            existingOrder.OrderDate = updatedOrder.OrderDate;
-            existingOrder.DeliveryDate = updatedOrder.DeliveryDate;
-            existingOrder.DeliveryTime = updatedOrder.DeliveryTime;
+
+            existingOrder.SetOrderStatus(updatedOrder.OrderStatus ?? existingOrder.OrderStatus);
+            existingOrder.SetOrderDate(updatedOrder.OrderDate ?? existingOrder.OrderDate ?? DateTime.Now);
+            existingOrder.SetDeliveryDate(updatedOrder.DeliveryDate ?? existingOrder.DeliveryDate ?? DateTime.Now);
+            existingOrder.SetDeliveryTime(updatedOrder.DeliveryTime != default ? updatedOrder.DeliveryTime : existingOrder.DeliveryTime);
+
             existingOrder.Quantity = updatedOrder.Quantity;
         }
 
@@ -57,7 +59,7 @@ namespace FoodOrderApi.Services
             if (existingOrder == null)
                 throw new Exception("Order not found");
 
-            existingOrder.OrderStatus = "Cancelled";
+            existingOrder.SetOrderStatus("Cancelled");
         }
     }
 }

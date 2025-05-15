@@ -9,9 +9,9 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowLocalhost", policy =>
     {
-        policy.WithOrigins("https://localhost:49850")  // Allow the React app to make requests
-              .AllowAnyHeader()                      // Allow any headers
-              .AllowAnyMethod();                     // Allow any HTTP method (GET, POST, etc.)
+        policy.WithOrigins("http://localhost:49850")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
     });
 });
 builder.Services.AddSingleton<IOrderService, OrderService>();

@@ -74,3 +74,11 @@ C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\refint\Food
 C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.pdb
 C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.genruntimeconfig.cache
 C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\ref\FoodOrderApi.dll
+C:\Users\Wipro\source\repos\food-order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.csproj.AssemblyReference.cache
+C:\Users\Wipro\source\repos\food-order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wipro\source\repos\food-order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.AssemblyInfoInputs.cache
+C:\Users\Wipro\source\repos\food-order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.AssemblyInfo.cs
+C:\Users\Wipro\source\repos\food-order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.csproj.CoreCompileInputs.cache
+C:\Users\Wipro\source\repos\food-order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Wipro\source\repos\food-order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Wipro\source\repos\food-order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.sourcelink.json

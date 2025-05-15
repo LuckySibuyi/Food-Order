@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FoodOrderApi"
+    "\\FoodOrderApi",
+    "\\FoodOrderClient"
   ],
-  "SelectedNode": "\\FoodOrderApi\\Program.cs",
+  "SelectedNode": "\\FoodOrderApi\\FoodOrderApi.sln",
   "PreviewInSolutionExplorer": false
 }
