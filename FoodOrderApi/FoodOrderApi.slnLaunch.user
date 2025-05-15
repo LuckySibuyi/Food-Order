@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "FoodOrderApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\FoodOrderClient\\foodorderclient.esproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

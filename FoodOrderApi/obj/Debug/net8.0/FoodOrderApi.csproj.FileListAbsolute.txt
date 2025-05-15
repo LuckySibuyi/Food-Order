@@ -1,0 +1,76 @@
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\appsettings.json
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\package-lock.json
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\package.json
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.staticwebassets.endpoints.json
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.exe
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.deps.json
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.runtimeconfig.json
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.dll
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.pdb
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Wipro\source\repos\FoodOrderApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.csproj.AssemblyReference.cache
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.AssemblyInfoInputs.cache
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.AssemblyInfo.cs
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.csproj.CoreCompileInputs.cache
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\scopedcss\bundle\FoodOrderApi.styles.css
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\staticwebassets\msbuild.FoodOrderApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\staticwebassets\msbuild.FoodOrderApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\staticwebassets\msbuild.build.FoodOrderApi.props
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FoodOrderApi.props
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FoodOrderApi.props
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrde.B73FD8E9.Up2Date
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.dll
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\refint\FoodOrderApi.dll
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.pdb
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.genruntimeconfig.cache
+C:\Users\Wipro\source\repos\FoodOrderApi\obj\Debug\net8.0\ref\FoodOrderApi.dll
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\appsettings.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\package-lock.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\package.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.staticwebassets.endpoints.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.exe
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.deps.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.runtimeconfig.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.dll
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\FoodOrderApi.pdb
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.csproj.AssemblyReference.cache
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.AssemblyInfoInputs.cache
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.AssemblyInfo.cs
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.csproj.CoreCompileInputs.cache
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\scopedcss\bundle\FoodOrderApi.styles.css
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\staticwebassets\msbuild.FoodOrderApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\staticwebassets\msbuild.FoodOrderApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\staticwebassets\msbuild.build.FoodOrderApi.props
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FoodOrderApi.props
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FoodOrderApi.props
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrde.B73FD8E9.Up2Date
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.dll
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\refint\FoodOrderApi.dll
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.pdb
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\FoodOrderApi.genruntimeconfig.cache
+C:\Users\Wipro\source\repos\Food order\FoodOrderApi\obj\Debug\net8.0\ref\FoodOrderApi.dll
