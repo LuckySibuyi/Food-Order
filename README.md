@@ -46,4 +46,4 @@ A full-stack web application built with **React** (frontend) and **.NET 9 Web AP
 1. Clone the repo:
    ```bash
    git clone https://github.com/LuckySibuyi/Food-Order.git
-cd Food-Order/backend
+   cd Food-Order/backend
