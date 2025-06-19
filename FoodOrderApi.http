@@ -1,6 +1,6 @@
-@FoodOrderApi_HostAddress = http://localhost:5224
+@rootURL = http://localhost:5224
 
-GET {{FoodOrderApi_HostAddress}}/weatherforecast/
+GET {{rootURL }}/api/Orders/
 Accept: application/json
 
 ###
