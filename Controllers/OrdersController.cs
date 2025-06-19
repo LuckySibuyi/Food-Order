@@ -33,19 +33,38 @@ namespace FoodOrderApi.Controllers
             orders.Add(order);
             return CreatedAtAction(nameof(GetOrders), new { id = order.OrderId }, order);
         }
-       
+
 
         [HttpGet("{id}")]
         public ActionResult<Order> GetOrderById(int id)
         {
             var order = orders.FirstOrDefault(x => x.OrderId == id);
-            if (order == null) 
+            if (order == null)
             {
                 return NotFound();
             }
 
             return Ok(order);
         }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateOrder(int id, Order updatedOrder)
+        {
+            var order = orders.FirstOrDefault(x => x.OrderId == id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            order.OrderId = updatedOrder.OrderId;
+            order.OrderName = updatedOrder.OrderName;
+            order.OrderDate = updatedOrder.OrderDate;
+            order.OrderStatus = updatedOrder.OrderStatus;
+
+            return NoContent();
+        }
+
     }
+    
    
 }

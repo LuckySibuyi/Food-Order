@@ -17,7 +17,13 @@ Content-Type: application/json
 }
 ###
 
-GET {{rootURL }}/api/Orders/1
-Accept: application/json
-
+PUT {{rootURL }}/api/Orders/4
+Content-Type: application/json
+{
+   
+  "orderName": "Juice",
+  "orderDate": "2023-10-01",
+  "orderStatus": "Pending"
+   
+}
 ###
