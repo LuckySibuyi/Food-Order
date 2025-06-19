@@ -21,6 +21,18 @@ namespace FoodOrderApi.Controllers
         {
             return Ok(orders);
         }
+
+        [HttpPost]
+        public ActionResult<Order> CreateOrder([FromBody] Order order)
+        {
+            if (order == null)
+            {
+                return BadRequest("Order cannot be null");
+            }
+            order.OrderId = orders.Count + 1;
+            orders.Add(order);
+            return CreatedAtAction(nameof(GetOrders), new { id = order.OrderId }, order);
+        }
     }
    
 }
