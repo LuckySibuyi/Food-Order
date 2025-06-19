@@ -10,11 +10,11 @@ namespace FoodOrderApi.Controllers
     public class OrdersController : ControllerBase
     {
 
-        static private readonly List<Order> orders = new()
-        {
+        static private readonly List<Order> orders =
+        [
             new() { OrderId = 1, OrderName = "Pizza", OrderDate = "2023-10-01", OrderStatus = "Delivered" },
             new() { OrderId = 2, OrderName = "Burger", OrderDate = "2023-10-02", OrderStatus = "Pending" }
-        };
+        ];
 
         [HttpGet]
         public ActionResult<List<Order>> GetOrders()

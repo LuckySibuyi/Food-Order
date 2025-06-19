@@ -5,7 +5,7 @@ Accept: application/json
 
 ###
 
-POST {{rootURL }}/api/Orders/  
+POST {{rootURL }}/api/Orders/   
 Content-Type: application/json
 {
    
@@ -17,10 +17,10 @@ Content-Type: application/json
 }
 ###
 
-PUT {{rootURL }}/api/Orders/11
+PUT {{rootURL }}/api/Orders/3
 Content-Type: application/json
 {
-  "orderId": "3", 
+  "orderId": "4", 
   "orderName": "Juice",
   "orderDate": "2023-10-04",
   "orderStatus": "Pending"
@@ -28,4 +28,4 @@ Content-Type: application/json
 }
 ###
 
-DELETE {{rootURL }}/api/Orders/8
+DELETE {{rootURL }}/api/Orders/4
