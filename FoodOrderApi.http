@@ -4,16 +4,20 @@ GET {{rootURL }}/api/Orders/
 Accept: application/json
 
 ###
+
 POST {{rootURL }}/api/Orders/  
 Content-Type: application/json
 {
    
-  "orderId": 3,
   "orderName": "Coffee",
   "orderDate": "2023-10-01",
-  "orderStatus": "Cancelled"
+  "orderStatus": "Pending"
 
    
-    
 }
+###
+
+GET {{rootURL }}/api/Orders/1
+Accept: application/json
+
 ###

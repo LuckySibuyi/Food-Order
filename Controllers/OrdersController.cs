@@ -9,7 +9,7 @@ namespace FoodOrderApi.Controllers
     [ApiController]
     public class OrdersController : ControllerBase
     {
-       
+
         static private readonly List<Order> orders = new()
         {
             new() { OrderId = 1, OrderName = "Pizza", OrderDate = "2023-10-01", OrderStatus = "Delivered" },
@@ -32,6 +32,19 @@ namespace FoodOrderApi.Controllers
             order.OrderId = orders.Count + 1;
             orders.Add(order);
             return CreatedAtAction(nameof(GetOrders), new { id = order.OrderId }, order);
+        }
+       
+
+        [HttpGet("{id}")]
+        public ActionResult<Order> GetOrderById(int id)
+        {
+            var order = orders.FirstOrDefault(x => x.OrderId == id);
+            if (order == null) 
+            {
+                return NotFound();
+            }
+
+            return Ok(order);
         }
     }
    
