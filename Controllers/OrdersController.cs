@@ -64,6 +64,18 @@ namespace FoodOrderApi.Controllers
             return NoContent();
         }
 
+        [HttpDelete("{id}")]
+        public IActionResult DeleteOrder(int id)
+        {
+            var order = orders.FirstOrDefault(x => x.OrderId == id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+            orders.Remove(order);
+
+            return NoContent();
+        }
     }
     
    
