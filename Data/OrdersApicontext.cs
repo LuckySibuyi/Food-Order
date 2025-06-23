@@ -12,10 +12,10 @@ namespace FoodOrderApi.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<OrdersApicontext>().HasData(
-                  new Order { OrderId = 1, OrderName = "Pizza", OrderDate = "2023-10-01", OrderStatus = "Delivered" },
-                  new Order { OrderId = 2, OrderName = "Burger", OrderDate = "2023-10-02", OrderStatus = "Pending" }
-                );
+            modelBuilder.Entity<Order>().HasData(
+                new Order { OrderId = 1, OrderName = "Pizza", OrderDate = "2023-10-01", OrderStatus = "Delivered" },
+                new Order { OrderId = 2, OrderName = "Burger", OrderDate = "2023-10-02", OrderStatus = "Pending" }
+            );
         }
         public DbSet<FoodOrderApi.Models.Order> Orders { get; set; }
 
